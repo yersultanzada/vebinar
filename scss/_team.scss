@@ -1,0 +1,141 @@
+#team {
+  position: relative;
+  background: linear-gradient(90deg,#fff, #fff, #fff, #ffddb8);
+  .team-slider {
+    .slick-arrow {
+      position: absolute;
+      top: auto;
+      bottom: 15%;
+      width: 50px;
+      height: 50px;
+      line-height: 1;
+      border: none;
+      border-radius: 50%;
+      color: $primary-200;
+      background-color: #fff;
+      font-family: monospace;
+      font-size: 2rem;
+      z-index: 300;
+      outline: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .slick-prev {
+      left: auto;
+      right: 280px;
+      i {
+        margin-right: 2px;
+      }
+    }
+
+    .slick-next {
+      right: 220px;
+      i {
+        margin-left: 2px;
+      }
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 2rem 0 1rem;
+      list-style-type: none;
+      border-bottom:  1px solid $primary;
+      width: 70%;
+      li {
+        margin: 0 0.25rem;
+      }
+      button {
+        display: block;
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: $primary;
+        text-indent: -9999px;
+      }
+      li.slick-active button {
+        background-color: $primary-200;
+      }
+    }
+    .item.slick-slide {
+      width: 300px;
+      height: 335px;
+      transition: transform .4s;
+      position: relative;
+      margin: 0 15px;
+      .card {
+        border: none;
+        -webkit-box-shadow: 1px 0 20px rgba(14,136,221,.13);
+        box-shadow: 1px 0 20px rgba(14,136,221,.13);
+        border-radius: 5px;
+        img {
+          display: block !important;
+          width: 130px;
+          height: 130px;
+          border-radius: 50%;
+          align-self: center;
+          margin-top: 50px;
+          margin-bottom: 30px;
+          border: 2px solid $yellow;
+          padding: 5px;
+        }
+        .card-title {
+          text-align: center;
+          margin-bottom: 20px;
+        }
+        span:last-child {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #team {
+    .col-lg-6 {
+      position: static;
+    }
+    .item.slick-slide {
+      margin: 0;
+      height: 373px !important;
+      .card {
+        img {
+          width: 170px !important;
+          height: 170px !important;
+        }
+      }
+    }
+    .team-slider.slick-slider {
+      position: static;
+    }
+    .slick-slide:after {
+      content:'';
+      position: absolute;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255,255,255,.5);
+      transition: transform .4s;
+    }
+
+    .item.slick-slide.slick-active {
+      transform: scale(0.8) translate(150px);
+    }
+
+    .item.slick-slide.slick-center {
+      transform: scale(1);
+      z-index: 30;
+    }
+
+    .slick-center:after {
+      opacity: 0;
+    }
+  }
+}

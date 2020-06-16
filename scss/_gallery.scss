@@ -1,0 +1,75 @@
+#blueimp-gallery .close:not(:disabled):not(.disabled):hover {
+  color: #fff;
+}
+#gallery {
+  #gallery-slider {
+    .slider-item {
+      .slick-slider {
+        margin-bottom: 10px;
+      }
+      .slider-nav .slick-slide {
+        margin: 5px;
+      }
+    }
+    .slick-arrow {
+      position: absolute;
+      top: auto;
+      bottom: 10%;
+      margin-top: -25px;
+      width: 50px;
+      height: 50px;
+      line-height: 1;
+      border: 1px solid $blue;
+      border-radius: 50%;
+      color: $blue;
+      background-color: transparent;
+      font-family: monospace;
+      font-size: 2rem;
+      z-index: 300;
+      outline: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .slick-prev {
+      left: auto;
+      right: 110px;
+      i {
+        margin-right: 2px;
+      }
+    }
+
+    .slick-next {
+      right: 50px;
+      i {
+        margin-left: 2px;
+      }
+    }
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      padding: 2rem 0 1rem;
+      list-style-type: none;
+      border-bottom:  1px solid $primary;
+      width: 70%;
+      li {
+        margin: 0 0.25rem;
+      }
+      button {
+        display: block;
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: $primary;
+        text-indent: -9999px;
+      }
+      li.slick-active button {
+        background-color: $primary-200;
+      }
+    }
+  }
+}

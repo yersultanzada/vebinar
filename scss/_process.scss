@@ -1,0 +1,95 @@
+#process {
+  .process-block {
+    flex: 0 0 100%;
+    width: 100%;
+    border-right: 2px solid #ccc;
+    .process-string {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      &.string-right {
+        .process-text {
+          text-align: left;
+        }
+      }
+      &.string-start, &.string-end {
+        .process-circle {
+          margin-left: auto;
+          .circle-outer {
+            position: absolute;
+            top: -9px;
+            left: -9px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid #838383;
+          }
+        }
+      }
+      &.string-start {
+        margin-bottom: 25px;
+      }
+      &.string-end {
+        margin-bottom: 0;
+        margin-top: 25px;
+      }
+    }
+    .process-text {
+      padding-right: 10px;
+      min-width: 210px;
+      .steps-title {
+        font-weight: bold;
+      }
+    }
+    .process-line {
+      width: 100%;
+      height: 2px;
+      background-color: #ccc;
+      &.line-dark {
+        background-color: #838383;
+      }
+    }
+    .process-circle {
+      position: relative;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: #ccc;
+      margin-right: -9px;
+      padding-left: 12px;
+      border: 2px solid #ccc;
+      &.circle-dark {
+        border: 2px solid #838383;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #process {
+    .process-block {
+      flex: 0 0 50%;
+      width: 50%;
+      .process-string.string-right {
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        transform: translateX(100%);
+        flex-direction: row-reverse;
+        .process-text {
+          padding-left: 10px;
+          padding-right: 0;
+        }
+        .process-circle {
+          margin-left: -7px;
+          margin-right: 0;
+        }
+      }
+      .process-text {
+        text-align: right;
+      }
+    }
+  }
+}

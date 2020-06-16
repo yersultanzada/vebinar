@@ -1,0 +1,23 @@
+#map {
+  img {
+    object-fit: cover;
+    height: 350px;
+  }
+}
+#footer {
+  background-color: #f5f5f5;
+  .footer-info {
+    i {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+@media (min-width: 992px) {
+  #map {
+    img {
+      object-fit: contain;
+      height: auto;
+    }
+  }
+}

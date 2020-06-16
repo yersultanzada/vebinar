@@ -1,0 +1,150 @@
+// Styling for the navbar1
+.mainNav-top {
+  background-color: $blue;
+  a {
+    text-decoration: none;
+    color: white !important;
+  }
+  .mainNav-top-tel a {
+    margin-right: 10px;
+    i {
+      margin-right: 8px;
+    }
+  }
+}
+#mainNav {
+  background-color: transparent;
+  .navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken(white, 10%);
+    }
+  }
+  .burger_menu {
+    float: right;
+    padding-top: 30px;
+    color: white;
+    i {
+      font-size: 1.4rem;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 100%;
+        font-weight: 400;
+        padding: 0.75em 0;
+        color: white;
+        &.active,
+        &:hover {
+          color: darken(white, 10%);
+        }
+      }
+    }
+  }
+  .request_btn a.btn{
+    margin-left: 10px;
+  }
+}
+@media(min-width:992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+    .navbar-brand {
+      font-size: 1.75em;
+      font-weight: bold;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 0 1em !important;
+          line-height: 1;
+          border-right: 1px solid white;
+        }
+        &:last-child .nav-link {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+.menu-modal#menuModal {
+  height: 100%;
+  overflow-y: hidden !important;
+  .modal-dialog {
+    margin: 0;
+    max-width: 100vw;
+    height: 100%;
+  }
+  .modal-content {
+    text-align: center;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    .modal-body {
+      padding: 20px 25px;
+      overflow-y: auto;
+      a.menu_logo {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: $primary-200;
+      }
+      a.nav-link {
+        display: inline-block;
+      }
+      .mainNav-top {
+        background-color: $primary-100;
+        div {
+          margin-bottom: 10px;
+        }
+      }
+      .modal_helper {
+        height: 67px;
+      }
+      .request_btn {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 0 20px 0;
+        background-color: #fff;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1000;
+    cursor: pointer;
+    background-color: transparent;
+    a {
+      display: block;
+      padding: 10px 15px;
+      color: $primary-200;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .mainNav-top {
+    .mainNav-top-tel a {
+      display: block;
+      margin-right: 0;
+    }
+  }
+}

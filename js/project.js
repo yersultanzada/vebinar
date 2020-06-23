@@ -15,23 +15,4 @@
     }
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
-    $('#menuModal').modal('hide');
-  });
-
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: '#mainNav',
-    offset: 56
-  });
-
-    $("iframe[data-src]").Lazy();
-
-    $('[data-toggle="popover"]').popover();
-
-    $('#contactForm').submit(function () {
-        yaCounter56138671.reachGoal('form-feedback');
-    });
 })(jQuery); // End of use strict

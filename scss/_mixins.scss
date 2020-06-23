@@ -1,3 +1,12 @@
-@mixin body-font {
-  font-family: 'PT Sans', sans-serif;
+@mixin roboto-regular {
+  font-family: 'Roboto', sans-serif;
+}
+@mixin roboto-light {
+  font-family: 'Roboto Light', sans-serif;
+}
+@mixin roboto-bold {
+  font-family: 'Roboto Bold', sans-serif;
+}
+@mixin roboto-black {
+  font-family: 'Roboto Black', sans-serif;
 }

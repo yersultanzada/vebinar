@@ -1,23 +1,20 @@
 // Styling for the calltoaction2 section
 #callToAction {
   position: relative;
-  .wt-background-callToImg {
-    background: fixed url(../img/callToAction-bg.jpeg) no-repeat 50% 50% / cover , #3c506f;
-  }
-  .wt-background-callToOverlay {
-    background: rgba(0, 0, 0, 0.75);
-  }
+  padding: 40px;
+  background-color: $white;
+  color: $black;
   form#contactForm {
     .form-row {
       display: block;
       .form-control {
-        border-radius: 25px;
+        border-radius: 0;
         padding: 12px 24px;
         height: 43px;
         margin-bottom: 10px;
       }
       button {
-        min-width: 217px;
+        margin-top: 20px;
         i {
           margin-right: 10px;
         }
@@ -34,43 +31,10 @@
   }
 }
 
-#modalCenter {
-  form#contactForm_popup {
-    .form {
-      margin: 20px 0;
-      .form-control {
-        border-radius: 25px;
-        padding: 12px 24px;
-        height: 43px;
-        margin-bottom: 10px;
-      }
-      button {
-        min-width: 217px;
-        i {
-          margin-right: 10px;
-        }
-      }
-      .result {
-        position: absolute;
-        left: 15px;
-        #answer_popup {
-          font-size: 14px;
-          color: $gray-900;
-        }
-      }
-    }
-  }
-}
-
 @media (min-width: 992px) {
   #callToAction {
-    form#contactForm {
-      .form-row {
-        display: flex;
-        .form-control {
-          margin-bottom: 0;
-        }
-      }
-    }
+    padding: 50px 80px;
+    max-width: 490px;
+    margin: auto;
   }
 }

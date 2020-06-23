@@ -1,0 +1,35 @@
+section#program {
+  padding: 100px 0 50px 0;
+  .program-card {
+    display: flex;
+    padding: 5px 15px;
+    background-color: #eeecf3;
+    align-items: center;
+    margin-bottom: 10px;
+    .card-digit {
+      font-size: 48px;
+      @include roboto-light;
+      margin-right: 15px;
+    }
+    .card-text {
+      color: #36275b;
+    }
+  }
+  .bottom-text {
+    font-size: 20px;
+    text-align: center;
+    color: #36275b;
+    margin-top: 30px;
+  }
+}
+@media (min-width: 992px) {
+  section#program {
+    padding: 100px 0;
+    .bottom-text {
+      font-size: 24px;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}

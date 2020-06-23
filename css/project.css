@@ -390,6 +390,21 @@ section#masthead .block-intro .about_speaker:after {
   margin: auto;
 }
 
+@media (max-width: 575px) {
+  section#masthead .block-intro {
+    padding-bottom: 30px;
+  }
+  section#masthead .block-intro .block-heroTitle {
+    max-width: 200px;
+  }
+  section#masthead .block-intro .block-btn {
+    text-align: center;
+  }
+  section#masthead .block-intro .block-bottom {
+    text-align: center;
+  }
+}
+
 @media (min-width: 992px) {
   section#masthead .wt-background-headerImg {
     background: url(../img/main.jpg) no-repeat 50% 50%/cover, #3c506f;

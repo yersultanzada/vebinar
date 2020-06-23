@@ -98,6 +98,22 @@ section#masthead {
     }
   }
 }
+@media (max-width: 575px) {
+  section#masthead {
+    .block-intro {
+      padding-bottom: 30px;
+      .block-heroTitle {
+        max-width: 200px;
+      }
+      .block-btn {
+        text-align: center;
+      }
+      .block-bottom {
+        text-align: center;
+      }
+    }
+  }
+}
 @media (min-width: 992px) {
   section#masthead {
     .wt-background-headerImg {

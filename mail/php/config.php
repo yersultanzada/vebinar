@@ -26,7 +26,7 @@
 	const SENDER = 'webtech19studio@yandex.kz';
 	
 	// Почта на которую будет приходить письмо
-	const CATCHER = 'estase.almaty@yandex.kz';
+	const CATCHER = 'webtech19studio@yandex.kz';
 	
 	// Тема письма
 	const SUBJECT = 'Заявка с сайта';

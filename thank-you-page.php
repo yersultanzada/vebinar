@@ -33,7 +33,7 @@
     <div class="container">
         <div class="row block-header">
             <a href="/"><img src="img/logo-dark.png" alt=""></a>
-            <div>БЕСПЛАТНЫЙ ВЕБИНАР</div>
+            <div>Бесплатный вебинар</div>
             <div>9 июля - 19:00 Аст</div>
         </div>
     </div>
@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1">
-                <h2 class="wt-section-title wt-text-green mb-3">Как получить максимум</h2>
+                <h2 class="wt-section-title wt-text-purple mb-3">Как получить максимум</h2>
                 <div class="block-item">
                     <div class="item-dig">1</div>
                     <div class="item-text">

@@ -103,10 +103,10 @@ section.masthead {
     .block-header {
       div {
         &:before {
-          background: url(../img/tag-green.svg);
+          background: url(../img/tag-purple.svg);
         }
         &:last-child {
-          color: $green;
+          color: $purple;
         }
       }
     }

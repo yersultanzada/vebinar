@@ -47,6 +47,10 @@ a:hover {
   color: #46E010 !important;
 }
 
+.wt-text-purple {
+  color: #6460A9 !important;
+}
+
 .wt-block-background {
   position: absolute;
   top: 0;
@@ -415,11 +419,11 @@ section.masthead.thank-you {
 }
 
 section.masthead.thank-you .block-header div:before {
-  background: url(../img/tag-green.svg);
+  background: url(../img/tag-purple.svg);
 }
 
 section.masthead.thank-you .block-header div:last-child {
-  color: #46E010;
+  color: #6460A9;
 }
 
 @media (max-width: 575px) {
@@ -649,7 +653,7 @@ section#thank-you .block-item .item-dig {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: #46E010;
+  background-color: #6460A9;
   color: #fff;
   text-align: center;
   line-height: 80px;
@@ -660,7 +664,7 @@ section#thank-you .block-item .item-dig {
 }
 
 section#thank-you .block-item .item-text {
-  width: 77%;
+  width: 70%;
 }
 
 section#thank-you a {

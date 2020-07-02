@@ -43,6 +43,10 @@ a:hover {
   color: #feef00 !important;
 }
 
+.wt-text-green {
+  color: #46E010 !important;
+}
+
 .wt-block-background {
   position: absolute;
   top: 0;
@@ -60,6 +64,21 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+.responsive-video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.responsive-video iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 section {
@@ -273,16 +292,16 @@ section#program .bottom-text {
   }
 }
 
-section#masthead {
+section.masthead {
   position: relative;
   color: white;
 }
 
-section#masthead .wt-background-headerImg {
+section.masthead .wt-background-headerImg {
   background: url(../img/main_mobile.jpg) no-repeat 100% 100%/cover, #3c506f;
 }
 
-section#masthead .block-header {
+section.masthead .block-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,20 +311,20 @@ section#masthead .block-header {
   padding: 15px 0;
 }
 
-section#masthead .block-header img {
+section.masthead .block-header img {
   width: 180px;
   margin-left: 20px;
   margin-bottom: 10px;
 }
 
-section#masthead .block-header div {
+section.masthead .block-header div {
   font-size: 18px;
   margin-left: 20px;
   margin-top: 5px;
   font-family: 'Roboto Light', sans-serif;
 }
 
-section#masthead .block-header div:before {
+section.masthead .block-header div:before {
   display: inline-block;
   content: "";
   width: 18px;
@@ -315,20 +334,21 @@ section#masthead .block-header div:before {
   vertical-align: sub;
 }
 
-section#masthead .block-header div:first-child {
+section.masthead .block-header div:first-child {
   text-transform: uppercase;
 }
 
-section#masthead .block-header div:last-child {
+section.masthead .block-header div:last-child {
   color: #feef00;
+  font-family: 'Roboto Bold', sans-serif;
 }
 
-section#masthead .block-intro {
+section.masthead .block-intro {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-section#masthead .block-intro .block-heroTitle {
+section.masthead .block-intro .block-heroTitle {
   font-size: 20px;
   line-height: 1.3;
   font-weight: 400;
@@ -341,7 +361,7 @@ section#masthead .block-intro .block-heroTitle {
   font-family: 'Roboto Bold', sans-serif;
 }
 
-section#masthead .block-intro .block-subTitle {
+section.masthead .block-intro .block-subTitle {
   font-size: 20px;
   line-height: 1.31;
   font-weight: 400;
@@ -353,16 +373,16 @@ section#masthead .block-intro .block-subTitle {
   font-family: 'Roboto Light', sans-serif;
 }
 
-section#masthead .block-intro .block-subTitle span {
+section.masthead .block-intro .block-subTitle span {
   color: #feef00;
   font-family: 'Roboto Bold', sans-serif;
 }
 
-section#masthead .block-intro .block-btn {
+section.masthead .block-intro .block-btn {
   margin: 40px 0;
 }
 
-section#masthead .block-intro .block-btn:before, section#masthead .block-intro .block-btn:after {
+section.masthead .block-intro .block-btn:before, section.masthead .block-intro .block-btn:after {
   display: block;
   content: "";
   background: url(../img/arrow_yellow.svg);
@@ -371,17 +391,17 @@ section#masthead .block-intro .block-btn:before, section#masthead .block-intro .
   margin: 0 auto 20px;
 }
 
-section#masthead .block-intro .block-btn:after {
+section.masthead .block-intro .block-btn:after {
   margin-top: 20px;
   -webkit-transform: rotateX(180deg);
   transform: rotateX(180deg);
 }
 
-section#masthead .block-intro .block-bottom span {
+section.masthead .block-intro .block-bottom span {
   color: #feef00;
 }
 
-section#masthead .block-intro .about_speaker:after {
+section.masthead .block-intro .about_speaker:after {
   display: block;
   content: "";
   background: url(../img/arrow_white.svg);
@@ -390,47 +410,58 @@ section#masthead .block-intro .about_speaker:after {
   margin: auto;
 }
 
+section.masthead.thank-you {
+  color: #000;
+}
+
+section.masthead.thank-you .block-header div:before {
+  background: url(../img/tag-green.svg);
+}
+
+section.masthead.thank-you .block-header div:last-child {
+  color: #46E010;
+}
+
 @media (max-width: 575px) {
-  section#masthead .block-intro {
+  section.masthead .block-intro {
     padding-bottom: 30px;
   }
-  section#masthead .block-intro .block-heroTitle {
+  section.masthead .block-intro .block-heroTitle {
     max-width: 200px;
   }
-  section#masthead .block-intro .block-btn {
+  section.masthead .block-intro .block-btn {
     text-align: center;
   }
-  section#masthead .block-intro .block-bottom {
+  section.masthead .block-intro .block-bottom {
     text-align: center;
   }
 }
 
 @media (min-width: 992px) {
-  section#masthead .wt-background-headerImg {
+  section.masthead .wt-background-headerImg {
     background: url(../img/main.jpg) no-repeat 50% 50%/cover, #3c506f;
   }
-  section#masthead .block-header {
+  section.masthead .block-header {
     padding: 25px 0;
   }
-  section#masthead .block-header img {
+  section.masthead .block-header img {
     width: 217px;
-    margin-left: 0;
     margin-bottom: 0;
   }
-  section#masthead .block-header div {
+  section.masthead .block-header div {
     font-size: 24px;
   }
-  section#masthead .block-intro {
+  section.masthead .block-intro {
     padding-top: 130px;
     padding-bottom: 85px;
   }
-  section#masthead .block-intro .block-heroTitle {
+  section.masthead .block-intro .block-heroTitle {
     font-size: 35px;
   }
-  section#masthead .block-intro .block-subTitle {
+  section.masthead .block-intro .block-subTitle {
     font-size: 26px;
   }
-  section#masthead .block-intro .block-bottom {
+  section.masthead .block-intro .block-bottom {
     max-width: 490px;
     margin: auto;
   }
@@ -604,12 +635,49 @@ section#video-block .title-desc span:after {
   margin-left: -70px;
 }
 
+section#thank-you .block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+section#thank-you .block-item .item-dig {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #46E010;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 45px;
+  font-family: 'Roboto Bold', sans-serif;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+section#thank-you .block-item .item-text {
+  width: 77%;
+}
+
+section#thank-you a {
+  color: #000;
+  text-decoration: underline;
+}
+
 @media (min-width: 992px) {
   section#video-block .title-desc {
     max-width: 300px;
   }
   section#video-block .title-desc span:after {
     display: block;
+  }
+  section#thank-you .thank-you-text {
+    max-width: 500px;
+    margin: 0 auto;
   }
 }
 

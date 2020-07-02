@@ -1,5 +1,5 @@
 // Styling for the masthead
-section#masthead {
+section.masthead {
   position: relative;
   color: white;
   .wt-background-headerImg {
@@ -33,6 +33,7 @@ section#masthead {
       }
       &:last-child {
         color: $yellow;
+        @include roboto-bold
       }
     }
   }
@@ -97,9 +98,22 @@ section#masthead {
       }
     }
   }
+  &.thank-you {
+    color: $black;
+    .block-header {
+      div {
+        &:before {
+          background: url(../img/tag-green.svg);
+        }
+        &:last-child {
+          color: $green;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 575px) {
-  section#masthead {
+  section.masthead {
     .block-intro {
       padding-bottom: 30px;
       .block-heroTitle {
@@ -115,7 +129,7 @@ section#masthead {
   }
 }
 @media (min-width: 992px) {
-  section#masthead {
+  section.masthead {
     .wt-background-headerImg {
       background: url(../img/main.jpg) no-repeat 50% 50% / cover , #3c506f;
     }
@@ -123,7 +137,6 @@ section#masthead {
       padding: 25px 0;
       img {
         width: 217px;
-        margin-left: 0;
         margin-bottom: 0;
       }
       div {

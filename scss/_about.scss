@@ -25,6 +25,33 @@ section#video-block {
     }
   }
 }
+section#thank-you {
+  .block-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    .item-dig {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: $green;
+      color: $white;
+      text-align: center;
+      line-height: 80px;
+      font-size: 45px;
+      @include roboto-bold;
+      font-weight: 700;
+      margin-right: 20px;
+    }
+    .item-text {
+      width: 77%;
+    }
+  }
+  a {
+    color: $black;
+    text-decoration: underline;
+  }
+}
 @media (min-width: 992px) {
   section#video-block {
     .title-desc {
@@ -34,6 +61,12 @@ section#video-block {
           display: block;
         }
       }
+    }
+  }
+  section#thank-you {
+    .thank-you-text {
+      max-width: 500px;
+      margin: 0 auto;
     }
   }
 }

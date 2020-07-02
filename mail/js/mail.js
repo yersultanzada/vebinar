@@ -13,9 +13,6 @@
 		let formDescription = $(this).find('.contact-form__description');
 
 		let fd = new FormData(form);
-		$(".contact-form i.fa-phone").css({
-			'display': 'none'
-		});
 		$("._preloader").css({
 			'display': 'inline-block'
 		});
@@ -48,20 +45,7 @@
 				}
 
 				if (respond.success) {
-					$("._preloader").css({
-						'display': 'none'
-					});
-					$(".contact-form i.fa-phone").css({
-						'display': 'inline-block'
-					});
-					formDescription.text(respond.success).fadeIn();
-					$('.'+formClass).find('input').val('');
-					setTimeout(() => {
-						formDescription.fadeOut("fast");
-					}, 2000);
-					setTimeout(() => {
-						formDescription.text('');
-					}, 4000);
+					window.location.replace("/thank-you-page.php?status=success");
 				}
 			},
 		});

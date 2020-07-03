@@ -48,8 +48,8 @@
                 </div>
             </div>
             <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="responsive-video">
-                    <iframe width="100%" height="377" src="https://www.youtube.com/embed/1AwlVagn2Xk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="responsive-video youtube" data-embed="1AwlVagn2Xk">
+                    <div class="play-button"></div>
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1">
@@ -78,11 +78,7 @@
 </section>
 <!-- Bootstrap core JavaScript -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyloadxt/1.1.0/jquery.lazyloadxt.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- Plugin JavaScript -->
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/jquery.lazy.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.lazy/1.7.1/plugins/jquery.lazy.youtube.min.js"></script>
 <!-- Custom scripts for this template -->
 <script src="js/project.min.js"></script>
 </body>

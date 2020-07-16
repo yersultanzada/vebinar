@@ -34,7 +34,7 @@
         <div class="row block-header">
             <a href="/"><img src="img/logo-dark.png" alt=""></a>
             <div>Бесплатный вебинар</div>
-            <div>9 июля - 19:00 Аст</div>
+            <div>23 июля - 19:00 Аст</div>
         </div>
     </div>
 </section>
@@ -57,7 +57,7 @@
                 <div class="block-item">
                     <div class="item-dig">1</div>
                     <div class="item-text">
-                        Поставьте напоминание в телефон на <strong>9 июля, 19:00 Аст</strong>
+                        Поставьте напоминание в телефон на <strong>23 июля, 19:00 Аст</strong>
                     </div>
                 </div>
                 <div class="block-item">
@@ -67,10 +67,10 @@
                     </div>
                 </div>
                 <div class="mt-3 text-center">
-                    <a href="#"><img src="img/Telegram.png" width="50" alt=""></a>
+                    <a href="https://t.me/webtech_digital" target="_blank"><img src="img/Telegram.png" width="50" alt=""></a>
                 </div>
                 <div class="mt-3 text-center">
-                    <a href="#">Нажмите сюда, чтобы скачать обещенный гайд</a>
+                    <a href="https://drive.google.com/file/d/11oaTc_1G87o2Hg6NMxf_GI8fyIi8zj1f/view?usp=sharing" target="_blank">Нажмите сюда, чтобы скачать обещенный гайд</a>
                 </div>
             </div>
         </div>
